@@ -1,0 +1,19 @@
+docker pull redis ---- Pull the image from the docker hub --- Public repository
+
+docker images ---- To see images on local
+
+docker run redis ---- To run image
+
+docker ps ----- list running containers
+
+docker run -d redis ---- run docker image in detach mode
+
+docker stop <container_ID> ---- To stop the running container
+
+docker start <container_ID> ---- To start the container
+
+docker ps -a ---- list stopped and running containers
+
+docker run <Image> ---- pull the image and starts container
+
+docker run -d -p6000:6379 redis --- port binding between laptop port and container port
