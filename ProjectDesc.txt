@@ -1,0 +1,8 @@
+Here I am writing description about demo project on docker
+
+We have an application developing in nodejs and javascript
+
+We have database mongodb which we have pull from Dockerhub.
+
+Both application and DB will be in container and we will try to make conection between both containers and run application on server.
+
