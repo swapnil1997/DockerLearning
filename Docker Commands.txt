@@ -27,3 +27,13 @@ docker run -d -p6001:6379 --name redis-older redis:4.0 ---- To give name to the 
 docker exec -it <container_ID> /bin/bash ---- To open linux terminal for given container troubleshooting
 
 docker exec -it <container_name> /bin/bash ---- To open linux terminal by giving container name
+
+FOR DELETING DOCKER IMAGE YOU NEED TO DELETE FIRST THE CONTAINER FROM THAT IMAGE RUNNNING AND THEN YOU CAN DELETE THE IMAGE
+
+FOR DELETING CONTAINER
+
+docker rm <Container_ID>
+
+FOR DELETING IMAGE
+
+docker rmi <Image_ID>

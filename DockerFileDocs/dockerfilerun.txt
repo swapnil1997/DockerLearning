@@ -1,0 +1,13 @@
+To build image out of docker file we are running below command
+
+Along with command we have to give two parameters for building docker image
+
+1) we have to give image name along with tag
+
+2) allocation of docker file..we need to tell docker from which dockerfile we need to build image
+
+COMMAND:
+
+docker build -t myapp:1.0 .
+
+docker build -t [IMAGE_NAME]:[VERSION_TAG] [DOCKERFILE ALLOCATION]
