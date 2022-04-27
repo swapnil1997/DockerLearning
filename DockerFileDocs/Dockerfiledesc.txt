@@ -1,0 +1,21 @@
+Docker file is a blueprint for building images.
+
+First line of every docker file is....
+FROM <IMAGE>
+Start by basing it on another image
+
+-------------------------------------IMAGE ENVIRONMENT BLUEPRINT---------------------------------------------
+
+1) install node   ------------  FROM node
+
+2) define environment variables ----------- ENV MONGO_INITDB_ROOT_USERNAME=admin \
+                                                MONGO_INITDB_ROOT_PASSWORD=password
+
+3) create /home/app folder ------- RUN mkdir -p /home/app  (directory is created inside the container)
+
+4) copy current folder files to /home/app ----- COPY . /home/app (COPY--executes on the host machine)
+
+COPY command copy files from your current system to the container
+
+5) start the app with: "node server.js" ---- CMD ["node","server.js"]
+
